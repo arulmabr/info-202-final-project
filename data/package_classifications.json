@@ -1,0 +1,12 @@
+{
+  "_comment": "Manual classification overrides for packages",
+  "overrides": {
+    "torch": {"domain": "deep_learning", "role": "framework"},
+    "tensorflow": {"domain": "deep_learning", "role": "framework"},
+    "numpy": {"domain": "data_processing", "role": "framework"},
+    "pandas": {"domain": "data_processing", "role": "framework"},
+    "scikit-learn": {"domain": "traditional_ml", "role": "framework"},
+    "transformers": {"domain": "nlp", "role": "framework"},
+    "matplotlib": {"domain": "visualization", "role": "framework"}
+  }
+}
