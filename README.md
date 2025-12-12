@@ -296,13 +296,17 @@ This project used AI assistance (Claude) as a coding tool. Per the rubric requir
 
 ### What AI Assisted With
 
-1. **Seed repository identification**: I used Claude's Deep Research feature to identify the top 100 ML repositories to analyze, which provided a starting list that I then validated and refined.
+1. **Seed repository identification**: I used Claude's Deep Research feature with the following prompt to identify the top 100 ML repositories to analyze:
 
-2. **Boilerplate code**: AI helped generate repetitive patterns like SQLite CRUD operations, Streamlit page layouts, and dataclass definitions.
+   > "Find the top 100 most influential Python machine learning repositories on GitHub. Include a mix of deep learning frameworks (PyTorch, TensorFlow ecosystem), traditional ML (scikit-learn ecosystem), NLP libraries, computer vision tools, MLOps platforms, and data processing utilities. For each repository, I need the owner/repo format (e.g., 'huggingface/transformers'). Prioritize repositories that are actively maintained and have meaningful dependency files (pyproject.toml, setup.py, or requirements.txt)."
 
-3. **Parsing logic**: The AST-based `setup.py` parser (`src/parsing/setup_parser.py`) was developed iteratively with AI assistance. I specified what information to extract; AI helped handle edge cases in Python's AST module.
+   This provided a starting list that I then manually validated and refined.
 
-4. **UI components**: AI helped structure the Streamlit components, particularly the PyVis graph rendering and faceted filter sidebar.
+2. **Code autocomplete**: AI autocomplete (via IDE integration) assisted with minor boilerplate patterns like SQLite CRUD operations, Streamlit page layouts, and dataclass definitions. The autocomplete suggestions were accepted selectively and modified as needed.
+
+3. **Parsing logic**: The AST-based `setup.py` parser (`src/parsing/setup_parser.py`) was developed iteratively with AI autocomplete assistance. I specified what information to extract; autocomplete helped with Python AST module syntax.
+
+4. **UI components**: AI autocomplete helped with Streamlit component syntax, particularly the PyVis graph rendering and faceted filter sidebar.
 
 ### Assessment of AI Effectiveness
 
